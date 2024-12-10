@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home1.css">
+    <style>
+        
+             /* General Styles */
+             .top-navbar, .main-navbar {
+            background:#ffbc13;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+
+        /* Top Navbar */
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1030;
+            padding: 10px 0;
+        }
+        .top-navbar .nav-link, .top-navbar .navbar-brand {
+            color: #fff !important;
+            margin-left: 1%;
+        }
+        .top-navbar .social-icons i, .top-navbar .contact-icons i {
+            color:black;
+            margin: 0 10px;
+        }
+        .top-navbar .social-icons i:hover, .top-navbar .contact-icons i:hover {
+            color: #ffbc13;
+        }
+        .top-navbar .contact-icons {
+            display: flex;
+            align-items: center;
+        }
+        /* .top-navbar .contact-icons .nav-link {
+            /* padding-left: 15px; */
+        /* Main Navbar */
+        .main-navbar {
+            margin-top: 66px;
+            color: black;
+            
+            background-color: white; /* Adjust based on the height of the top navbar */
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.2rem; /* Increase font size */
+            margin-left: 20px; /* Add space between items */
+            margin-right: 20px;
+        }
+        .dropdown-menu {
+            background-color: white;
+            min-width: 300px;
+            padding: 15px;
+            left: auto;
+            right: 0;
+        }
+        .dropdown-item, .dropdown-header {
+            color:black !important;
+        }
+        .dropdown-item {
+            padding: 10px 15px;
+        }
+        .dropdown-divider {
+            background-color: black;
+        }
+        .cart-dropdown {
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .main-navbar {
+                margin-top: 96px; /* Remove margin for smaller screens */
+            }
+        }
+        @media (max-width: 768px) {
+            .top-navbar .social-icons {
+                display: none; /* Hide social icons on smaller screens */
+            }
+            .top-navbar .contact-icons {
+                display: none; /* Hide contact info on smaller screens */
+            }
+            .main-navbar {
+                margin-top: 0px; /* Remove margin for smaller screens */
+            }
+            .navbar-nav .nav-link {
+                font-size: 1rem; /* Decrease font size on smaller screens */
+                margin-left: 10px; /* Adjust spacing for smaller screens */
+                margin-right: 10px;
+            }
+            .dropdown-menu {
+                min-width: 200px; /* Adjust width of dropdown on smaller screens */
+            }
+        }
+
+
+        #footer-widgets .widget.widget_socials .socials a { position: relative; display: inline-block; width: 38px; height: 38px; color: #fff; line-height: 38px; text-align: center; margin-right: 3px; margin-bottom: 10px; z-index: 1; }
+#footer-widgets .widget.widget_socials .socials a:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1;background-color: #ffbc13; border-color: #ffbc13; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-transition: all ease .238s; -moz-transition: all ease .238s; transition: all ease .238s; }
+#footer-widgets .widget.widget_socials .socials a:hover:before { border: 1px solid #333; background-color: #222; }
+
+
+
+
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.logo1{
+    width: 100%;
+    height: 12vh;
+	padding: 0;
+}
+
+/* Footer
+-------------------------------------------------------------- */
+#footer { background-color:lightgray; padding: 70px 0 60px; color: black; position: relative; z-index: 1; ; }
+
+/* Bottom Bar
+-------------------------------------------------------------- */
+#bottom { font-size: 0.857em; background-color: #101010; padding: 19px 0; color: white; font-family: "Montserrat", sans-serif; }
+#bottom a:hover { color: #fff; }
+
+
+
+#bottom .bottom-bar-inner-wrap { display: table; overflow: hidden; width: 100%; }
+#bottom .bottom-bar-content { display: table-cell; margin: 0; text-align: left; vertical-align: middle; width: 50%;}
+#bottom .bottom-bar-menu { display: table-cell; text-align: right; vertical-align: middle; width: 50%;}
+#bottom.style-1 .bottom-bar-menu li:last-child a { padding-right: 0; }
+
+/* Bottom Style 2 */
+#bottom.style-2 .bottom-bar-content { text-align: right; }
+#bottom.style-2 .bottom-bar-menu { text-align: left; }
+#bottom.style-2 .bottom-bar-menu li:first-child a { padding-left: 0; }
+
+/* Bottom Style 3 */
+#bottom.style-3 .bottom-bar-inner-wrap,
+#bottom.style-3 .bottom-bar-menu,
+#bottom.style-3 .bottom-bar-content { display: block; width: 100%; text-align: center; }
+
+/* Bottom Navigation */
+#bottom ul.bottom-nav { list-style: none; margin: 0; }
+#bottom ul.bottom-nav > li { display: inline-block; }
+#bottom ul.bottom-nav > li > a { display: block; color: #666; padding: 0 10px; position: relative; }
+
+#bottom ul.bottom-nav > li > a:hover { color: #ffbc13; }
+#bottom ul.bottom-nav ul ul { display: none; }
+
+/* Pagination & Arrows
+-------------------------------------------------------------- */
+.wprt-pagination { margin: 50px 0 0; text-align: center; }
+.wprt-pagination ul,
+.woocommerce-pagination > .page-numbers { margin: 0; }
+.wprt-pagination ul li,
+.woocommerce-pagination .page-numbers li { display: inline-block; padding: 0; margin-right: 10px; }
+.wprt-pagination ul li .page-numbers,
+.woocommerce-pagination .page-numbers li .page-numbers { display: inline-block; line-height: 40px; width: 40px; height: 40px; text-align: center; background-color: #ffbc13; color: #fff; -webkit-transition: all ease .238s; -moz-transition: all ease .238s; transition: all ease .238s; }
+.wprt-pagination ul li a.page-numbers:hover,
+.woocommerce-pagination .page-numbers li .page-numbers:hover { background-color: #4b4b4b; }
+.wprt-pagination ul li .page-numbers.current,
+.woocommerce-pagination .page-numbers li .current { opacity: 0.7 }
+.woocommerce-pagination { margin-top: 0; clear: both; text-align: center; }
+
+/* Scroll Top Button
+-------------------------------------------------------------- */
+#scroll-top { position: fixed !important; right: 25px; bottom: -50px; display: block; line-height: 38px; text-align: center; width: 40px; height: 40px; visibility: hidden; filter: alpha(opacity=0); opacity: 0; z-index: 9999; cursor: pointer; z-index: 1; overflow: hidden; }
+#scroll-top:after { content: "\f106"; font-family: "FontAwesome"; color: #fff; font-size: 20px; position: absolute; left: 0; top: 0; width: 100%; -webkit-transition: all ease .238s; -moz-transition: all ease .238s; transition: all ease .238s; }
+#scroll-top:before { border-radius: 3px; content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #ffbc13; z-index: -1; -webkit-transition: all ease .238s; -moz-transition: all ease .238s; transition: all ease .238s; }
+#scroll-top:hover:before { background-color: #585252; }
+#scroll-top:hover:after { color: #fff; }
+#scroll-top.show { bottom: 40px; filter: alpha(opacity=100); opacity: 1; visibility: visible; }
+
+/* Media Queries
+-------------------------------------------------------------- */
+@media only screen and (min-width: 1930px) {
+	.parallax {
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.font-size-25 { font-size: 18px; }
+	.font-size-30 { font-size: 20px; }
+	.font-size-35 { font-size: 26px; }
+	.font-size-40 { font-size: 28px; }
+	.font-size-45 { font-size: 30px; }
+	.font-size-50 { font-size: 26px; }
+	.font-size-55 { font-size: 30px; }
+	.font-size-60 { font-size: 35px; }
+	.font-size-70 { font-size: 40px; }
+	.font-size-80 { font-size: 45px; }
+	.font-size-90 { font-size: 50px; }
+	.font-size-100 { font-size: 55px; }
+
+	#hero-section .hero-text { font-size: 16px; margin-top: 0; }
+
+	#site-header .mobile-button { display: block; }
+	.text-left-mobile { text-align: left !important; }
+	.text-center-mobile { text-align: center !important; }
+
+	#main-nav,
+	#site-header #header-search,
+	.nav-top-cart-wrapper,
+	.site-navigation-wrap,
+	#header-aside,
+	#sidebar { display: none; }
+
+	#site-content,
+	#sidebar { width: 100% !important; max-width: none !important; float: none; }
+	#inner-content { padding-left: 0 !important; padding-right: 0 !important; }
+
+	#main-content { padding: 50px 0; }
+
+	#site-header #site-header-inner,
+	#site-header.style-2 #site-header-inner,
+	#site-header.style-3 #site-header-inner,
+	#site-header.style-4 #site-header-inner { padding-top: 28px; padding-bottom: 28px; }
+
+	#site-header.style-2 #site-logo { margin-top: 0; }
+	#site-header.style-4 #site-logo { text-align: left; float: left; }
+
+	.hentry { margin-top: 40px; }
+	.hentry .post-title { font-size: 1.428em; }
+	.hentry .post-link a { padding: 0.425em 1.75em; font-size: 0.928em; }
+	.comment-respond #comment-reply { padding: 1.08em 1.75em; font-size: 0.928em; }
+	#footer-widgets .widget .widget-title { font-size: 1.142em; margin-bottom: 28px; }
+}
+
+@media only screen and (max-width: 767px) {
+	#top-bar { display: none; }
+
+	#site-header #site-header-inner,
+	#site-header.style-2 #site-header-inner,
+	#site-header.style-3 #site-header-inner,
+	#site-header.style-4 #site-header-inner { padding-top: 20px; padding-bottom: 20px; }
+
+	#featured-title .featured-title-inner-wrap { padding: 30px 0; }
+	#featured-title .featured-title-heading { font-size: 24px; }
+
+	.hentry .post-author { text-align: center; }
+	.hentry .post-author .author-avatar { float: none; margin: 0 auto 20px; }
+	.hentry .post-read-more, .hentry .post-link, .hentry .post-link-share { display: block; width: 100%; float: none; text-align: left; }
+	.hentry .post-link { margin-bottom: 10px; }
+	.hentry .post-link-share { margin-top: 20px; }
+	.wprt-pagination { margin-top: 30px; }
+	.comments-area { margin-top: 40px; }
+	.comment-respond { margin-top: 0; }
+	.comments-area .comments-title, .comments-area .comment-reply-title { margin-bottom: 20px; }
+	.comment-list article .gravatar { width: 50px; float: none; margin: 0 0 17px; }
+	.comment-list .children > li { padding-left: 35px; }
+	.name-wrap, .email-wrap { width: 100%; float: none; }
+	.name-wrap input, .email-wrap input, .message-wrap textarea { margin-bottom: 20px; }
+	.woocommerce-page .content-woocommerce .woocommerce-result-count { display: none; }
+	.woocommerce-page .content-woocommerce .products { padding-top: 20px; }
+	.woocommerce-page.shop-col-3 .content-woocommerce .products li,
+	.woocommerce-page.shop-col-4 .content-woocommerce .products li,
+	.woocommerce-page.shop-col-5 .content-woocommerce .products li { width: 100%; margin-bottom: 30px; }
+	.woocommerce-page .shop_table.cart .product-remove { width: 20px; }
+	.woocommerce-page .shop_table.cart .product-thumbnail { width: 50px; }
+	.woocommerce-page .shop_table.cart .cart_item .product-thumbnail img { width: 30px; }
+	.woocommerce-page .shop_table.cart .product-name { width: 120px; }
+	.woocommerce-page .shop_table.cart .coupon { display: none; }
+	.woocommerce-page .cart_totals { width: 100%; float: none; }
+	.woocommerce-page .cart_totals .wc-proceed-to-checkout a { padding: 7px 0; }
+
+	#footer { padding: 50px 0 10px; }
+	#footer-widgets [class^="col-md-"] .widget:last-child { margin-bottom: 30px; }
+
+	#bottom .bottom-bar-content,
+	#bottom .bottom-bar-menu { width: 100%; display: block; text-align: center; padding: 5px 0; }
+}
+
+@media only screen and (max-width: 479px) {
+	#site-header #site-header-inner,
+	#site-header.style-2 #site-header-inner,
+	#site-header.style-3 #site-header-inner,
+	#site-header.style-4 #site-header-inner { padding-top: 12px; padding-bottom: 12px; }
+}
+
+/* Retina Devices
+-------------------------------------------------------------- */
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (   -moz-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx){
+	.wprt-testimonials .customer:after {
+		background: url(assets/img/5-stars@2x.png) no-repeat center center ;
+		background-size: 97px 15px;
+	}
+}
+
+
+
+
+
+
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            background-size: cover;
+        }
+        
+
+/* 
+#sidebar .widget.widget_socials .socials a,
+#footer-widgets .widget.widget_socials .socials a { position: relative; display: inline-block; width: 35px; height: 35px; color: #777; line-height: 35px; text-align: center; margin-right: 6px; margin-bottom: 6px; z-index: 1; }
+#sidebar .widget.widget_socials .socials a:before,
+#footer-widgets .widget.widget_socials .socials a:before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; border: 1px solid #eaeaea; background-color: transparent; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -webkit-transition: all ease .238s; -moz-transition: all ease .238s; transition: all ease .238s; }
+#sidebar .widget.widget_socials .socials a:hover:before,
+#footer-widgets .widget.widget_socials .socials a:hover:before { background-color: #ffbc13; border-color: #ffbc13; }
+#sidebar .widget.widget_socials .socials a:hover,
+#footer-widgets .widget.widget_socials .socials a:hover { color: #fff; } */
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+
+ <!-- Top Navbar (Visible on all screens) -->
+ <nav class="navbar navbar-expand-lg navbar-dark top-navbar">
+    <div class="container">
+        <ul class="navbar-nav social-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-dribbble"></i></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto contact-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i>042-36882044</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Info@cecombuilders.pk</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-clock"></i> Mon-Fri: 7:00 - 17:00</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Navbar (Visible on all screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <a class="navbar-brand" href="./index.html"><img class="logo1" src=".\header.png" alt=""></a>
+    <button style="background-color:#4b4b4b;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./aboutus.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <a class="dropdown-item" href="./services.html">Services</a>
+                    <a class="dropdown-item" href="./servicesDetail.html">Services Detail</a>
+                    <a class="dropdown-item" href="./shop.html">Shop</a>
+                    <a class="dropdown-item" href="./shopSingle.html">Shop single</a>
+                    <a class="dropdown-item" href="./shopCart.html">Shop Cart</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                    <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
+                    <a class="dropdown-item" href="./Project detail.html">Project</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./ContactUs.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i style="color:black ;" class="fas fa-shopping-cart"></i><span style="background-color: #ffbc13;color: #fff;" class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="dropdown-menu cart-dropdown" aria-labelledby="cartDropdown">
+                    <div class="dropdown-header">Cart Items</div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 1</span>
+                        <span>$10.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 2</span>
+                        <span>$15.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 3</span>
+                        <span>$20.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <strong>Subtotal:</strong>
+                        <strong>$45.00</strong>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="btn btn-primary btn-block">Checkout</a>
+                    <a href="#" class="btn btn-secondary btn-block mt-2">View Cart</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('./3.jpg');">
+                <div class="carousel-caption">
+                    <h3  class="h3 " style="font-size: 2rem;">Welcome To Construction <span class="text"></span></h3>
+                    <p style="font-size: 2.7rem; font-weight: 800; ">The <span style="color: orange;">Best</span> Company </p>
+                 <a href="./portfolio.html"> <button type="button" class="btn btn-warning">Our Portfolio</button></a>  
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('./4.jpg');">
+                <div class="carousel-caption">
+                    <h3  class="h3 " style="font-size: 2rem;">Welcome To Construction <span class="text"></span></h3>
+                    <p style="font-size: 2.7rem; font-weight: 800; ">Fast and <span style="color: orange;">Reliable </span> Services </p>
+                    <a href="./ContactUs.html"> <button type="button" class="btn btn-warning">Contact us</button></a> 
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('./5.jpg');">
+                <div class="carousel-caption">
+                    <h3  class="h3 " style="font-size: 2rem;">Welcome To Construction <span class="text"></span></h3>
+                    <p style="font-size: 2.7rem; font-weight: 800; ">We Focus on <span style="color: orange;">You</span></p>
+                    <a href="./portfolio.html"> <button type="button" class="btn btn-warning">Our Portfolio</button></a> 
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+    <!-- ban -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col p-5 bg-warning">
+                <h2 class="ml-5 text-white">
+                    Contractors & Construction Managers Since 1981</h2>
+                    <button type="button" class="btn btn-light btn1 p-2 ">Learn More</button>
+                    
+            </div>
+        </div>
+     </div>
+
+<!-- mainservices  -->
+     <div class="container-fluid ">
+        <div class="row">
+            <h4 class="head4">MAIN SERVICES</h4>
+
+            <div class="space" style="width: 100%;height:5vh;"></div>
+        </div>
+        <div class= "row ">
+            <div class="col-xl-4 ">
+                <div class="bx1 mt-4 ml-2">
+                    
+                    <h4 class="hh4">Residential construction</h4>
+                <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+               
+            </div>
+                <div class="bx2 mt-5 ml-2"> <h4 class="hh4">Commercial construction</h4>
+                    <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p></div>
+                <div class="bx3 mt-5 ml-2"> <h4 class="hh4">General Contracting</h4>
+                <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p></div>
+            <div class="div" style="height: 7vh;"></div>
+            </div>
+            <div class="col-xl-4 "> <div class="bx1 mt-4 ml-2">
+                <h4 class="hh4">Government contracts</h4>
+            <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+           
+        </div>
+            <div class="bx2 mt-5 ml-2"> <h4 class="hh4">Architectural Consultation</h4>
+                <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p></div>
+            <div class="bx3 mt-5 ml-2"> <h4 class="hh4">Wood work</h4>
+            <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p></div>
+        <div class="div" style="height: 7vh;"></div></div>
+            <div class="col-xl-4 "> <div class="bx1 mt-4 ml-2">
+                <h4 class="hh4">Exterior Renovation</h4>
+            <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p>
+           
+        </div>
+            <div class="bx2 mt-5 ml-2"> <h4 class="hh4">Infrastructure Development </h4>
+                  <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p></div>
+            <div class="bx3 mt-5 ml-2"> <h4 class="hh4">Glass an Aluminum work </h4>
+            <p class="pr1">Vestibulum eu libero volutpat, portas quam, tempus sem. Donec sodales quam id lorem lobortis, vitae interdum nisl.</p></div>
+        <div class="div" style="height: 7vh;"></div></div>
+        </div>
+    </div>
+
+    <!-- projects  -->
+<div  class="conntainer bgimage">
+    <div style="background-color:white;" class="container-fluid">
+        <div class="row">
+            <div class="space" style="width:100%;height:10vh;"></div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6  pl-5 ">
+                <h3>OUR PROJECTS</h3>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                <button class="ctrl p-2" type="button">
+                    <span>&lt;</span>
+                </button>
+                <button class="ctrl1 p-2" type="button">
+                    <span>&gt;</span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col pl-5 pr-5">
+                <hr style="width:12%;height:5px;background-color: #ffbc13;margin-left:0;">
+                <hr style="margin-top: -20px;width:88%;margin-left:12%;">
+            </div>
+        </div>
+        <div class="space" style="width:100%;height:5vh;"></div>
+        <!-- cards  -->
+        <div class="row pl-5 pr-5" id="cardContainer">
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/1.jpg"  alt="">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+                       <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</a></p>
+                        <p style="color: #ffbc13;font-weight: bolder;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/2.jpg"  alt="">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p></a>                    <p style="color: #ffbc13;font-weight: bolder;" class="card-text">Construction </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/3.jpg"  alt="">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+    
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p></a>
+                        <p style="color: #ffbc13;font-weight: bolder;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/4.jpg"  alt="">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+    
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p></a>
+                        <p style="color: #ffbc13;font-weight: bolder;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/5.jpg"  alt="...">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p>
+       </a>                 <p style="color:#ffbc13;font-weight: bold;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/6.jpg"  alt="...">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p>
+       </a>                 <p style="color:#ffbc13;font-weight: bold;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/7.jpg"  alt="...">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p>
+       </a>                 <p style="color:#ffbc13;font-weight: bold;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/8.jpg"  alt="...">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p>
+       </a>                 <p style="color:#ffbc13;font-weight: bold;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img class="cimg" src="https://themes247.net/html5/construction-template/demo/assets/img/projects/1.jpg"  alt="...">
+                    <div class="card-img-overlay">
+                          <br><br><br><br><br><br><br><br><br>
+                        <a style="text-decoration: none;color:#4b4b4b;" href=""><p style="font-weight: bold;color: #4b4b4b;" class="card-text">LUXURY BUILDINGS</p>
+       </a>                 <p style="color:#ffbc13;font-weight: bold;" class="card-text">Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space" style="width:100%;height:12vh;"></div>
+    </div>  
+</div> 
+<!-- why  choose us  -->
+<div  class="container-fluid ">
+    <div class="row ">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  ">
+             <h4 class="ml-5 mt-4">Why Choose us</h4> 
+            <hr class="hr3 ml-5">
+
+            <div class="collapsible">
+                <div class="collapsible-header">We have 30 plus years in the building industry</div>
+                <div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+            </div>
+            <div class="collapsible">
+                <div class="collapsible-header">Quality construction continues after the project</div>
+                <div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+            </div>
+            <div class="collapsible">
+                <div class="collapsible-header">We use technology to do the job more quickly</div>
+                <div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+            </div>
+            <div class="collapsible">
+                <div class="collapsible-header">Employees are continually trained on safety issues</div>
+                <div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Curabitur tortor mi, eleifend ornare lobortis non. Nulla porta purus quis iaculis ultrices. Proin aliquam sem at nibh hendrerit sagittis. Nullam ornare odio eu lacus tincidunt malesuada. Sed eu vestibulum elit. Curabitur tortor mi, eleifend ornare.</div>
+            </div>
+        
+            <h4 class="ml-5 mt-4"> OUR CEO </h4> 
+            <hr class="hr3 ml-5">
+            <h4 class="ml-5 mt-4"> We Dig what you Dream !</h4>
+        </div>
+        <div  class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12   ">
+            
+            <div style="border: none;" class="card mt-5 " >
+                <img style="height: 100vh;width:65%;margin-left:20%;" src="./Picture2.png" class="card-img-top" alt="...">
+              </div>
+              <div class="div" style="height: 10vh;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid  bg">
+    <div   class="row">
+        <div style="text-align: center; font-size:2em;"  class="col ">
+            <h4  class= "d-flex  hd">The Construction Company</h4>
+            <h1 style="text-align: center;" class="hd2 ml-0">AWESOME FACTS</h1>
+            <div style="color:white;" class="row p-2">
+                <div  class="col">
+                    <div class="wprt-counter text-center has-plus">
+                        <div class="number" data-speed="5000" data-to="13691+" data-in-viewport="yes">13691 </div>
+                        <span style="color: #ffbc13;">+</span>
+                        <div class="text">PROJECT COMPLETED</div>
+                    </div>
+                    <div class="wprt-spacer" data-desktop="0" data-mobi="35" data-smobi="35"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="wprt-counter text-center has-plus">
+                        <div class="number" data-speed="5000" data-to="1725" data-in-viewport="yes">1725 </div><span style="color: #ffbc13;">+</span>
+                        <div class="text">SATISFIED CLIENTS</div>
+                    </div>
+    
+                    <div class="wprt-spacer" data-desktop="0" data-mobi="35" data-smobi="35"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="wprt-counter text-center has-plus">
+                        <div class="number" data-speed="5000" data-to="984" data-in-viewport="yes">984</div>
+                        <span style="color: #ffbc13;">+</span>
+                        <div class="text">WORKERS EMPLOYED</div>
+                    </div>
+    
+                    <div class="wprt-spacer" data-desktop="0" data-mobi="35" data-smobi="35"></div>
+                </div>
+            </div>
+            <div class="div" style="height: 20vh;"></div>
+        </div>
+       
+    </div>
+</div>
+
+<!-- we offer  -->
+<div class="container-fluid bg-light">
+    <div class="row ">
+        <div  class="col">
+            <div class="testimonial-slider">
+                <h1 class="head10 ml-5 mt-5 text-dark">What we offer</h1>
+                <hr class="hr1 mt-3 ml-5">
+                <div class="testimonial-container">
+                    <div class="testimonial-card mt-5 mb-5 ">
+                        <img src="https://themes247.net/html5/construction-template/demo/assets/img/services/2.jpg" alt="Person 1" class="testimonial-image">
+                        <p class="testimonial-text">"The Green Building</p>
+                        <p class="testimonial-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut obcaecati veniam voluptatum natus, magnam officiis facere.</p>
+                        <button class="testimonial-button mt-5 ">Read More</button>
+                    </div>
+                    <div class="testimonial-card mt-5 ">
+                        <img src="https://themes247.net/html5/construction-template/demo/assets/img/services/3.jpg" alt="Person 2" class="testimonial-image">
+                        <p class="testimonial-text">"House Renovation</p>
+                        <p class="testimonial-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut obcaecati veniam voluptatum natus, magnam officiis facere.</p>
+                        <button class="testimonial-button mt-5 ">Read More</button>
+                    </div>
+                    <div class="testimonial-card mt-5 ">
+                        <img src="https://themes247.net/html5/construction-template/demo/assets/img/services/1.jpg" alt="Person 3" class="testimonial-image">
+                        <p class="testimonial-text">"Design and Construction</p>
+                        <p class="testimonial-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut obcaecati veniam voluptatum natus, magnam officiis facere.</p>
+                        <button class="testimonial-button mt-5 ">Read More</button>
+                    </div>
+                    <div class="testimonial-card mt-5  ml-5">
+                        <img src="https://themes247.net/html5/construction-template/demo/assets/img/projects/4.jpg" alt="Person 4" class="testimonial-image">
+                        <p class="testimonial-text">Design or Construction</p>
+                        <p class="testimonial-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut obcaecati veniam voluptatum natus, magnam officiis facere.</p>
+                        <button class="testimonial-button mt-5 ">Read More</button>
+                    </div>
+                    <!-- Add more testimonial cards as needed -->
+                </div>
+                <button class="slider-button prev p-4" onclick="prevSlide()">&#10094;</button>
+                <button class="slider-button next p-4" onclick="nextSlide()">&#10095;</button>
+                
+              </div>
+        </div>
+    </div>
+    <div class="space" style="height: 10vh;"></div>
+</div>
+
+
+
+
+<!-- <div class="container-fluid pb-0 mb-0">
+    <div class="space" style="width:100%;height:15vh;"></div>
+    <div class="row pb-0 mb-0">
+        <div class="col-xl-7 pb-0 mb-0 ">
+            <h4 class="ml-5 mt-4">Our Partners</h4> 
+            <hr class="hr3 ml-5">
+            <div class="row ">
+                <div class="col ">
+                  <img class="im ml-5" src="./1.png" alt="">
+                </div>
+                <div class="col">
+                  <img class="ml-4 im" src="./2.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="im" src="./3.png " alt="">
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col mt-5">
+                    <img class=" ml-5 im" src="./4.png" alt="">
+                </div>
+                <div class="col mt-5">
+                    <img class=" ml-4 im" src="./5.png" alt="">
+                </div>
+                <div class="col mt-5">
+                    <img class="im" src="./6.png " alt="">
+                </div>
+                
+              </div>
+              <div class="div" style="height: 2vh;"></div>
+        </div>
+        <div class="col-xl-5 pb-0 mb-0 ">
+            <h4 class="ml-5 mt-4">Testimonial</h4> 
+            <hr class="hr3 ml-5">
+            <div id="testimonialBoxCarousel" class="carousel slide testimonial-box-carousel " data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item testimonial-carousel- mb-5item active">
+                    <div class="testimonial-box">
+                      <img src="./1.jpg" alt="Person 1">
+                      <div class="testimonial-box-name">Person 1</div>
+                      <div class="testimonial-box-role">Role 1</div>
+                      <div class="stars">★★★★★</div>
+                      <div class="testimonial-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</div>
+                    </div>
+                  </div>
+                  <div class="carousel-item testimonial-carousel-item">
+                    <div class="testimonial-box">
+                      <img src="./2.jpg" alt="Person 2">
+                      <div class="testimonial-box-name">Person 2</div>
+                      <div class="testimonial-box-role">Role 2</div>
+                      <div class="stars">★★★★★</div>
+                      <div class="testimonial-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</div>
+                    </div>
+                  </div>
+                  <div class="carousel-item testimonial-carousel-item">
+                    <div class="testimonial-box">
+                      <img src="./1.jpg" alt="Person 3">
+                      <div class="testimonial-box-name">Person 3</div>
+                      <div class="testimonial-box-role">Role 3</div>
+                      <div class="stars">★★★★★</div>
+                      <div class="testimonial-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialBoxCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialBoxCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </div>
+</div> -->
+
+</div>
+</div>
+
+
+ <!-- Footer -->
+ <footer id="footer">
+    <div id="footer-widgets" class="container style-1">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="widget widget_text">
+            <!-- <h2 class="widget-title"><span>ABOUT US</span></h2> -->
+            <div class="textwidget">
+                <img style="height:50vh;width:80%;" src=".\footer.png"  alt="image"
+                class="margin-top-5 margin-bottom-25">
+              <!-- <p>Building isn’t just a job. At the Construction Company, it is our passion. With every project we
+                undertake, we set the bar high and provide the best people in the industry, with a true love of what
+                we do to make our Customers’ vision a reality.</p> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="widget widget_links">
+            <h2 class="widget-title"><span>COMPANY LINKS</span></h2>
+            <ul class="wprt-links clearfix col2">
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">History</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Services</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Team &amp; Awards</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Delivery Methods</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Community</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Safety</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">News &amp; Events</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Sustainability</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">FAQ</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Portfolio</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Contact Us</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Shop</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="widget widget_information">
+            <h2 class="widget-title"><span>CONTACT INFO</span></h2>
+            <ul class="style-2">
+              <li style="list-style:none;"  class="address clearfix">
+                <span class="hl">Address:</span>
+                <span class="text">3 St 5-A Shah Kamal Road, Lahore, Pakistan</span>
+              </li>
+              <li style="list-style:none;" class="phone clearfix">
+                <span class="hl">Phone:</span>
+                <span class="text">0324 – 4184871 </span>
+              </li>
+              <li style="list-style:none;" class="email clearfix">
+                <span class="hl">E-mail:</span>
+                <span class="text">Info@cecombuilders.pk</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget widget_spacer">
+            <div class="wprt-spacer clearfix" data-desktop="10" data-mobi="10" data-smobi="10" style="height:10px">
+            </div>
+          </div>
+          
+
+          <div class="widget widget_socials">
+            <div class="socials">
+              <a target="_blank" href="#"><i class="fa-brands fab fa-twitter"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-facebook-f"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-google-plus-g"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-pinterest"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom -->
+  <div id="bottom" class="clearfix style-1">
+    <div id="bottom-bar-inner" class="wprt-container">
+      <div class="bottom-bar-inner-wrap">
+
+        <!-- Start bottom-bar-content -->
+        <div class="bottom-bar-content">
+
+          <!-- Start copyright -->
+          <div style="padding-left:1%;" id="copyright">CECOM BUILDERS © All Rights Reserved 2024.
+          </div>
+          <!-- End copyright -->
+
+        </div>
+        <!-- End bottom-bar-content -->
+
+        <!-- Start bottom-bar-menu -->
+        <div class="bottom-bar-menu pr-3">
+          <ul class="bottom-nav">
+            <li style="list-style:none;"><a href="#/">HISTORY</a></li>
+            <li><a href="#/">FAQ</a></li>
+            <li><a href="#/">EVENTS</a></li>
+          </ul>
+        </div>
+        <!-- End bottom-bar-menu -->
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.col-3'); // Select all card columns
+    const totalCards = cards.length;
+    const visibleCards = 4; // Number of cards to show at a time on mobile
+
+    let currentPosition = 0; // Starting position
+
+    // Function to update visibility of cards based on currentPosition
+    function updateCardsVisibility() {
+        cards.forEach((card, index) => {
+            if (index >= currentPosition && index < currentPosition + visibleCards) {
+                card.style.display = 'block'; // Show the card
+            } else {
+                card.style.display = 'none'; // Hide the card
+            }
+        });
+    }
+
+    // Initially show the first set of cards
+    updateCardsVisibility();
+
+    // Event listener for previous button (if applicable)
+    // Assuming you have navigation controls for mobile, adapt as needed
+    const prevButton = document.querySelector('.ctrl'); // Example class for previous button
+    if (prevButton) {
+        prevButton.addEventListener('click', function() {
+            if (currentPosition > 0) {
+                currentPosition--;
+                updateCardsVisibility();
+            }
+        });
+    }
+
+    // Event listener for next button (if applicable)
+    // Assuming you have navigation controls for mobile, adapt as needed
+    const nextButton = document.querySelector('.ctrl1'); // Example class for next button
+    if (nextButton) {
+        nextButton.addEventListener('click', function() {
+            if (currentPosition < totalCards - visibleCards) {
+                currentPosition++;
+                updateCardsVisibility();
+            }
+        });
+    }
+});
+</script>
+
+<!-- number increment  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.wprt-counter .number').each(function() {
+            var $this = $(this);
+            var speed = parseInt($this.attr('data-speed'));
+            var from = parseInt($this.attr('data-from'));
+            var to = parseInt($this.attr('data-to'));
+
+            $({ countNum: from }).animate({ countNum: to }, {
+                duration: speed,
+                easing: 'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                }
+            });
+        });
+    });
+</script>
+
+<script src="home.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+
+</html>

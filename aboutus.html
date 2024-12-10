@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<style> 
+body{
+      padding:0%;
+      margin:0%;
+      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.a{
+      text-decoration: none;
+list-style:none;
+}
+.a:hover{
+      text-decoration: none;
+      list-style:none;  
+}
+/* top  */
+.m1{
+      background-color:whitesmoke;
+      height:23vh;
+}
+.abt1{
+      letter-spacing:2px;
+}
+.hm2{
+ text-align: right;
+}
+ .slct{
+ color: #ffbc13;
+ }
+ .slct:hover{
+      color:black;
+      cursor: pointer;
+      text-decoration:none;
+ }
+ /* number performance  */
+.wprt-counter.has-plus .number {
+    position: relative;
+}
+.wprt-counter .number {
+    font-size: 40px;
+    line-height: normal;
+    color: #4b4b4b;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.wprt-counter.has-plus .number:after {
+    content: "+";
+    color: #ffbc13;
+}
+.wprt-counter .text {
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: gray;
+}
+ /* slider down img  */
+.im{
+      width: 96%;
+       height: 12vh;
+}
+.im:hover{
+      cursor: pointer;
+      border:1px solid #ffbc13 ;
+}
+/* button   */
+.b1{
+      background-color: #ffbc13;
+      color:white;
+      font-weight: bold;
+      padding: 1%;
+      width:50%;
+      height:8vh;
+      border:none;
+      border-radius:3px;
+}
+.b1:hover{
+    font-weight: bold;
+background-color: #4b4b4b;
+color:white;
+cursor: pointer;
+}
+/* img set */
+.background-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* img on back  */
+.background-image img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  z-index: -1; /* Places the image behind other content */
+}
+/* button control  */
+.ctrl{
+      margin-left:85%;
+      padding:1%;
+      color:whitesmoke;
+      border-color:whitesmoke;
+      background-color:white;
+}
+.ctrl:hover{
+      color:#ffbc13;
+      border-color:#ffbc13;
+      background-color:white;
+}
+.ctrl1{
+      color:whitesmoke;
+      padding:1%;
+      border-color:whitesmoke;
+      background-color:white; 
+}
+.ctrl1:hover{
+      color:#ffbc13;
+      border-color:#ffbc13;
+      background-color:white;
+}
+@media screen and (max-width: 768px) {
+    .ctrl {
+        /* Adjust styles for .ctrl class */
+        margin-left: 0;
+    }
+
+}
+/* cards  */
+.card{
+      text-align: center;
+      background-color:whitesmoke;
+      border:none;
+}
+/* icons  */
+.card-img-overlay{
+      display:none;
+}
+.card:hover .card-img-overlay{
+      cursor: pointer;
+      display:block;
+}
+
+/* to set cards  */
+/* Media query for screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 575.98px) {
+    .col-3 {
+        flex: 0 0 100%; /* Stack columns vertically */
+        max-width: 100%; /* Full width of the container */
+    }
+}
+
+</style>
+<body>
+
+<!-- Top Navbar (Visible on all screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark top-navbar">
+    <div class="container">
+        <ul class="navbar-nav social-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-dribbble"></i></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto contact-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i>042-36882044</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Info@cecombuilders.pk</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-clock"></i> Mon-Fri: 7:00 - 17:00</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Navbar (Visible on all screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <a class="navbar-brand" href="./index.html"><img class="logo1" src=".\header.png" alt=""></a>
+    <button style="background-color:#4b4b4b;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./aboutus.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <a class="dropdown-item" href="./services.html">Services</a>
+                    <a class="dropdown-item" href="./servicesDetail.html">Services Detail</a>
+                    <a class="dropdown-item" href="./shop.html">Shop</a>
+                    <a class="dropdown-item" href="./shopSingle.html">Shop single</a>
+                    <a class="dropdown-item" href="./shopCart.html">Shop Cart</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                    <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
+                    <a class="dropdown-item" href="./Project detail.html">Project</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./ContactUs.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i style="color:black ;" class="fas fa-shopping-cart"></i><span style="background-color: #ffbc13;color: #fff;" class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="dropdown-menu cart-dropdown" aria-labelledby="cartDropdown">
+                    <div class="dropdown-header">Cart Items</div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 1</span>
+                        <span>$10.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 2</span>
+                        <span>$15.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 3</span>
+                        <span>$20.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <strong>Subtotal:</strong>
+                        <strong>$45.00</strong>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="btn btn-primary btn-block">Checkout</a>
+                    <a href="#" class="btn btn-secondary btn-block mt-2">View Cart</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+ <!-- top -->
+<div  class="container-fluid m1">
+      <div class="row ">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 abt1 p-5">
+                  <h2>About Us</h2>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 hm2 p-5">
+                  <p style="color: grey;"> <a class="slct" href="./index.html">Home</a> &nbsp;/ &nbsp; About Us</p>
+            </div>
+      </div>
+
+</div>
+ <!-- text and carousel  -->
+<div style="background-color:white;" class="container-fluid pl-5 pr-5">
+      <div class="row ">
+            <div class="space" style="width:100%;height:10vh;"></div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pt-3 ">
+      <h3>OUR HISTORY & FACTS</h3>
+      <hr style="width:12%;height:5px;background-color: #ffbc13;margin-left:0;">
+      <hr style="margin-top: -20px;width:76%;">
+      <div class="space " style="width:100%;height:2vh;"></div>
+      <p style="color: gray;">Perhaps you're wondering what the difference is between a newer company and one that has antiquity behind it. Well, we can tell you that we’re one of the best construction companies, a fact that is backed by 40 years in the business - that's over four decades of providing consistently excellent services with high customer satisfaction ratings. We know what works, what doesn't work, and we pay attention to even the smallest details, working with our customers to make sure they're happy.</p>
+      <div class="space " style="width:100%;height:4vh;"></div>
+      <h3 style="text-align: center; font-weight: bold;color:#4b4b4b;">WE <span style="color:rgb(158, 67, 67);">DIG</span> WHAT YOU <span style="color: rgb(76, 207, 76);">DREAM</span> </h3>
+      <div class="space " style="width:100%;height:4vh;"></div>
+      <!-- performance display  -->
+      <div class="row p-2">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="wprt-counter text-center has-plus">
+                    <div class="number" data-speed="5000" data-to="13691" data-in-viewport="yes">13691</div>
+                    <div class="text">PROJECT COMPLETED</div>
+                </div>
+                <div class="wprt-spacer" data-desktop="0" data-mobi="35" data-smobi="35"></div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="wprt-counter text-center has-plus">
+                    <div class="number" data-speed="5000" data-to="1725" data-in-viewport="yes">1725</div>
+                    <div class="text">SATISFIED CLIENTS</div>
+                </div>
+
+                <div class="wprt-spacer" data-desktop="0" data-mobi="35" data-smobi="35"></div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="wprt-counter text-center has-plus">
+                    <div class="number" data-speed="5000" data-to="984" data-in-viewport="yes">984</div>
+                    <div class="text">WORKERS EMPLOYED</div>
+                </div>
+
+                <div class="wprt-spacer" data-desktop="0" data-mobi="35" data-smobi="35"></div>
+            </div>
+        </div>
+    </div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol style="display: none;" class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="carousel-item-0">
+                <img style="height: 59vh;" src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/1.jpg" class="d-block w-100" alt="401">
+              </div>
+              <div class="carousel-item" id="carousel-item-1">
+                <img style="height: 59vh;" src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/2.jpg" class="d-block w-100" alt="402">
+              </div>
+              <div class="carousel-item" id="carousel-item-2">
+                <img style="height: 59vh;" src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/3.jpg" class="d-block w-100" alt="403">
+              </div>
+              <div class="carousel-item" id="carousel-item-3">
+                <img style="height: 59vh;" src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/4.jpg" class="d-block w-100" alt="404">
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+          <!-- link images  -->
+          <div class="row pt-2 pb-2 pl-3 pr-3">
+            <div class="col p-0">
+              <a href="#carouselExampleIndicators" data-slide-to="0">
+                <img class="im img-fluid"  src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/1-s.jpg" alt="0">
+              </a>
+            </div>
+            <div class="col p-0">
+              <a href="#carouselExampleIndicators" data-slide-to="1">
+                <img class="im img-fluid"  src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/2-s.jpg" alt="1">
+              </a>
+            </div>
+            <div class="col p-0">
+              <a href="#carouselExampleIndicators" data-slide-to="2">
+                <img class="im img-fluid"  src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/3-s.jpg" alt="2">
+              </a>
+            </div>
+            <div class="col p-0">
+              <a href="#carouselExampleIndicators" data-slide-to="3">
+                <img class="im img-fluid"  src="https://themes247.net/html5/construction-template/demo/assets/img/gallery/4-s.jpg" alt="3">
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="space" style="width:100%;height:10vh;"></div>
+      </div>
+</div>
+<!-- img behind text  -->
+<div class="background-image">
+      <img src="bg-section-3.jpg" alt="">
+      <div class="container-fluid cont border">
+        <div class="space" style="width:100%;height:5vh;"></div>
+        <div class="row ">
+          <div style="text-align: center;" class="col">
+            <div class="space" style="width:100%;height:15vh;"></div>
+            <h2> <span style="color:white;">EXCELLENCE IN CONSTRUCTION </span><span style="color: #ffbc13;"> SINCE 1981 </span></h2>
+        </div>
+    </div>
+    <div class="space" style="width:100%;height:5vh;"></div>
+        <div style="text-align: center;" class="row ">
+            <div class="col"></div>
+            <div class="col"><a href=""><button class="b1 ">GET A QUOTE</button></a></div>
+            <div class="col"></div>
+            <div class="space" style="width:100%;height:15vh;"></div>
+        </div>
+        <div class="space" style="width:100%;height:2vh;"></div>
+      </div>
+    </div>
+<!-- team  -->    
+<div style="background-color:white;" class="container-fluid">
+      <div class="row">
+          <div class="space" style="width:100%;height:10vh;"></div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6  pl-5 ">
+              <h3>MEET OUR TEAM</h3>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+              <button class="ctrl" type="button">
+                  <span>&lt;</span>
+              </button>
+              <button class="ctrl1" type="button">
+                  <span>&gt;</span>
+              </button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col pl-5 pr-5">
+              <hr style="width:12%;height:5px;background-color: #ffbc13;margin-left:0;">
+              <hr style="margin-top: -20px;width:88%;margin-left:12%;">
+          </div>
+      </div>
+      <div class="space" style="width:100%;height:5vh;"></div>
+      <!-- cards  -->
+      <div class="row pl-5 pr-5" id="cardContainer">
+          <div class="col-3">
+              <div class="card">
+                  <img src="t1.jpg"  alt="">
+                  <div class="card-img-overlay">
+                        <br><br><br><br><br><br><br><br>
+                        <h4><a href=""><img style="height:4vh;width:13%;" class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145802.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/16021/16021270.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145804.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></h4></a>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">Richard Wagner</p>
+                      <p class="card-text"><small class="text-muted">Civil Engineer</small></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="card">
+                  <img src="t2.jpg"  alt="">
+                  <div class="card-img-overlay">
+                        <br><br><br><br><br><br><br><br>
+                        <h4><a href=""><img style="height:4vh;width:13%;" class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145802.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/16021/16021270.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145804.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></h4></a>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">Sarah Spenche</p>
+                      <p class="card-text"><small class="text-muted">Construction Assistant</small></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="card">
+                  <img src="t3.jpg"  alt="">
+                  <div class="card-img-overlay">
+                        <br><br><br><br><br><br><br><br>
+                        <h4><a href=""><img style="height:4vh;width:13%;" class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145802.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/16021/16021270.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145804.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></h4></a>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">Jhon halpern</p>
+                      <p class="card-text"><small class="text-muted">Construction Manager</small></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="card">
+                  <img src="t4.jpg"  alt="">
+                  <div class="card-img-overlay">
+                        <br><br><br><br><br><br><br><br>
+                        <h4><a href=""><img style="height:4vh;width:13%;" class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145802.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/16021/16021270.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145804.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></h4></a>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">Tommy Atkins</p>
+                      <p class="card-text"><small class="text-muted">Electricians</small></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="card">
+                  <img src="t5.jpg"  alt="...">
+                  <div class="card-img-overlay">
+                        <br><br><br><br><br><br><br><br>
+                        <h4><a href=""><img style="height:4vh;width:13%;" class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145802.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/16021/16021270.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></a>
+                        <a href=""><img style="height:4vh;width:13%;"class="animate__animated animate__fadeInDown" src="https://cdn-icons-png.freepik.com/256/145/145804.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></h4></a>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">John Joe</p>
+                      <p class="card-text"><small class="text-muted">Junior Architect</small></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="space" style="width:100%;height:12vh;"></div>
+  </div>
+  
+  <!-- Footer -->
+  <footer id="footer">
+    <div id="footer-widgets" class="container style-1">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="widget widget_text">
+            <!-- <h2 class="widget-title"><span>ABOUT US</span></h2> -->
+            <div class="textwidget">
+                <img style="height:50vh;width:80%;" src=".\footer.png"  alt="image"
+                class="margin-top-5 margin-bottom-25">
+              <!-- <p>Building isn’t just a job. At the Construction Company, it is our passion. With every project we
+                undertake, we set the bar high and provide the best people in the industry, with a true love of what
+                we do to make our Customers’ vision a reality.</p> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="widget widget_links">
+            <h2 class="widget-title"><span>COMPANY LINKS</span></h2>
+            <ul class="wprt-links clearfix col2">
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">History</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Services</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Team &amp; Awards</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Delivery Methods</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Community</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Safety</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">News &amp; Events</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Sustainability</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">FAQ</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Portfolio</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Contact Us</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Shop</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="widget widget_information">
+            <h2 class="widget-title"><span>CONTACT INFO</span></h2>
+            <ul class="style-2">
+              <li style="list-style:none;"  class="address clearfix">
+                <span class="hl">Address:</span>
+                <span class="text">3 St 5-A Shah Kamal Road, Lahore, Pakistan</span>
+              </li>
+              <li style="list-style:none;" class="phone clearfix">
+                <span class="hl">Phone:</span>
+                <span class="text">0324-4184871 </span>
+              </li>
+              <li style="list-style:none;" class="email clearfix">
+                <span class="hl">E-mail:</span>
+                <span class="text">Info@cecombuilders.pk</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget widget_spacer">
+            <div class="wprt-spacer clearfix" data-desktop="10" data-mobi="10" data-smobi="10" style="height:10px">
+            </div>
+          </div>
+          
+
+          <div class="widget widget_socials">
+            <div class="socials">
+              <a target="_blank" href="#"><i class="fa-brands fab fa-twitter"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-facebook-f"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-google-plus-g"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-pinterest"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom -->
+  <div id="bottom" class="clearfix style-1">
+    <div id="bottom-bar-inner" class="wprt-container">
+      <div class="bottom-bar-inner-wrap">
+
+        <!-- Start bottom-bar-content -->
+        <div class="bottom-bar-content">
+
+          <!-- Start copyright -->
+          <div style="padding-left:1%;" id="copyright">CECOM BUILDERS © All Rights Reserved 2024.
+          </div>
+          <!-- End copyright -->
+
+        </div>
+        <!-- End bottom-bar-content -->
+
+        <!-- Start bottom-bar-menu -->
+        <div class="bottom-bar-menu pr-3">
+          <ul class="bottom-nav">
+            <li style="list-style:none;"><a href="#/">HISTORY</a></li>
+            <li><a href="#/">FAQ</a></li>
+            <li><a href="#/">EVENTS</a></li>
+          </ul>
+        </div>
+        <!-- End bottom-bar-menu -->
+      </div>
+    </div>
+  </div>
+
+
+      </body>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+      <!-- number increment  -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function() {
+              $('.wprt-counter .number').each(function() {
+                  var $this = $(this);
+                  var speed = parseInt($this.attr('data-speed'));
+                  var from = parseInt($this.attr('data-from'));
+                  var to = parseInt($this.attr('data-to'));
+      
+                  $({ countNum: from }).animate({ countNum: to }, {
+                      duration: speed,
+                      easing: 'linear',
+                      step: function() {
+                          $this.text(Math.floor(this.countNum));
+                      },
+                      complete: function() {
+                          $this.text(this.countNum);
+                      }
+                  });
+              });
+          });
+      </script>
+      <!-- team cards  -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.col-3'); // Select all card columns
+    const totalCards = cards.length;
+    const visibleCards = 4; // Number of cards to show at a time on mobile
+
+    let currentPosition = 0; // Starting position
+
+    // Function to update visibility of cards based on currentPosition
+    function updateCardsVisibility() {
+        cards.forEach((card, index) => {
+            if (index >= currentPosition && index < currentPosition + visibleCards) {
+                card.style.display = 'block'; // Show the card
+            } else {
+                card.style.display = 'none'; // Hide the card
+            }
+        });
+    }
+
+    // Initially show the first set of cards
+    updateCardsVisibility();
+
+    // Event listener for previous button (if applicable)
+    // Assuming you have navigation controls for mobile, adapt as needed
+    const prevButton = document.querySelector('.ctrl'); // Example class for previous button
+    if (prevButton) {
+        prevButton.addEventListener('click', function() {
+            if (currentPosition > 0) {
+                currentPosition--;
+                updateCardsVisibility();
+            }
+        });
+    }
+
+    // Event listener for next button (if applicable)
+    // Assuming you have navigation controls for mobile, adapt as needed
+    const nextButton = document.querySelector('.ctrl1'); // Example class for next button
+    if (nextButton) {
+        nextButton.addEventListener('click', function() {
+            if (currentPosition < totalCards - visibleCards) {
+                currentPosition++;
+                updateCardsVisibility();
+            }
+        });
+    }
+});
+
+      </script>
+      
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@0.6%.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+      </html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<style> 
+body{
+      padding:0%;
+      margin:0%;
+      font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.a{
+      text-decoration: none;
+list-style:none;
+}
+.a:hover{
+      text-decoration: none;
+      list-style:none;  
+}
+/* top  */
+.m1{
+      background-color:whitesmoke;
+      height:23vh;
+}
+.abt1{
+      letter-spacing:2px;
+}
+.hm2{
+ text-align: right;
+}
+ .slct{
+ color: #ffbc13;
+ }
+ .slct:hover{
+      color:black;
+      cursor: pointer;
+      text-decoration:none;
+ }
+
+/* msg button  */
+.b1{
+    height:7vh;
+    width:100%;
+    background-color: #ffbc13;
+    border-color: #ffbc13;
+    color: white;
+}
+.b1:hover{
+background-color: #4b4b4b;
+border-color: #4b4b4b;
+}
+@media (max-width: 600px) {
+    .b1 {
+        width:100%;
+        height: 10vh; /* Adjusted height for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .b1 {
+        width:100%;
+        height: 15vh; /* Adjusted height for smaller screens */
+    }
+}
+/* input stye  */
+.in{
+    width:100%;
+    height:7vh;
+    padding:5%;
+    border:1px solid lightgray;
+    color:black;
+}
+</style>
+<body>
+
+    <!-- Top Navbar (Visible on all screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark top-navbar">
+    <div class="container">
+        <ul class="navbar-nav social-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-dribbble"></i></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto contact-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i>042-36882044</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Info@cecombuilders.pk</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-clock"></i>Mon-Fri: 7:00 - 17:00</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Navbar (Visible on all screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <a class="navbar-brand" href="./index.html"><img class="logo1" src=".\header.png" alt=""></a>
+    <button style="background-color:#4b4b4b;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./aboutus.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <a class="dropdown-item" href="./services.html">Services</a>
+                    <a class="dropdown-item" href="./servicesDetail.html">Services Detail</a>
+                    <a class="dropdown-item" href="./shop.html">Shop</a>
+                    <a class="dropdown-item" href="./shopSingle.html">Shop single</a>
+                    <a class="dropdown-item" href="./shopCart.html">Shop Cart</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                    <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
+                    <a class="dropdown-item" href="./Project detail.html">Project</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="./ContactUs.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color:black ;" class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i style="color:black ;" class="fas fa-shopping-cart"></i><span style="background-color: #ffbc13;color: #fff;" class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="dropdown-menu cart-dropdown" aria-labelledby="cartDropdown">
+                    <div class="dropdown-header">Cart Items</div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 1</span>
+                        <span>$10.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 2</span>
+                        <span>$15.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Item 3</span>
+                        <span>$20.00</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <strong>Subtotal:</strong>
+                        <strong>$45.00</strong>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="btn btn-primary btn-block">Checkout</a>
+                    <a href="#" class="btn btn-secondary btn-block mt-2">View Cart</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+      <!-- top -->
+<div  class="container-fluid m1">
+      <div class="row ">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 abt1 p-5">
+                  <h2>Contact</h2>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 hm2 p-5">
+                  <p style="color: grey;"> <a class="slct" href="./index.html">Home</a> &nbsp;/ &nbsp; Contact</p>
+            </div>
+      </div>
+
+</div>
+<!-- map  -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col p-5">
+<div class="space " style="height:6vh;width:100%;"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.0486146517983!2d74.30605397097659!3d31.52282470309868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919037cfe41cc4f%3A0x10eb3a7d7a807246!2s5%20Shah%20Kamal%20Rd%2C%20Combo%20Colony%2C%20Lahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2s!4v1720453866932!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+<!-- contact us  -->
+<div class="container-fluid pl-5 pr-5">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+            <h5>CALL US</h5>
+            <p style="padding-top:3%;color:gray;">It gives us pleasure to welcome you on our website.
+                Our company believe is that deliver on the commitments which we make to our dear clients though being open, giving value to money, delivering on time with extra care. We should not expect excellence in future unless we measure the success of our past. We always take necessary action to meet the needs of our clients. 
+                As CEO, it is my belief that our company Standards will contribute to our growth and success.
+                </p>
+                <div class="row">
+                    <div  class="col-2"><img style="height:4vh;width:100%;" src="https://cdn-icons-png.freepik.com/256/2/2144.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></div>
+                <div class="col-10 p-0"><p style="color:gray;">Address: 3 St 5-A Shah Kamal Road, Lahore, Pakistan</p></div>
+                    </div>
+                    <div class="row">
+                        <div  class="col-2"><img style="height:4vh;width:100%;" src="https://cdn-icons-png.freepik.com/256/13488/13488318.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></div>
+                    <div class="col-10 p-0"><p style="color:gray;">Cell: 0324 – 4184871</p></div>
+                        </div>
+                        <div class="row">
+                            <div  class="col-2"><img style="height:4vh;width:100%;" src="https://cdn-icons-png.freepik.com/256/14811/14811430.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></div>
+                        <div class="col-10 p-0"><p style="color:gray;">Landline 042- 36882044</p></div>
+                            </div>
+                        <div class="row">
+                            <div  class="col-2"><img style="height:4vh;width:100%;" src="https://cdn-icons-png.freepik.com/256/14807/14807877.png?ga=GA1.1.1199042701.1718427422&semt=ais_hybrid" alt=""></div>
+                        <div class="col-10 p-0"><p style="color:gray;">Email: Info@cecombuilders.pk</p></div>
+                            </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+            <h5>GET IN TOUCH WITH US</h5>
+            <div class="space" style="height:4vh;width:100%;"></div>
+            <form id="contactForm">
+                <div class="row">
+                    <div class="col"><input class="in" type="text" id="name" placeholder="Name *"></div>
+                    <div class="col"><input class="in" type="email" id="email" placeholder="E-mail *"></div>
+                </div>
+                <div class="space" style="height:4vh;width:100%;"></div>
+                <div class="row">
+                    <div class="col"><input class="in" type="text" id="phone" placeholder="Phone Number"></div>
+                    <div class="col"><input class="in" type="text" id="subject" placeholder="Subject*"></div>
+                </div>
+                <div class="space" style="height:4vh;width:100%;"></div>
+                <div class="row">
+                    <div class="col"><input style="padding-bottom:30vh;" class="in" type="text" id="message" placeholder="Message"></div>
+                </div>
+                <div class="row">
+                    <div class="space" style="height:3vh;width:100%;"></div>
+                    <div class="col"></div>
+                    <div class="col p-0"><button type="submit" class="b1">SEND MESSAGE</button></div>
+                    <div class="col"></div>
+                </div>
+            </form>
+              <!-- Modal -->
+        <div class="modal" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Details</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <!-- Data will be displayed here -->
+                        <div id="modalData"></div>
+                        <div class="col p-0"><button type="button" class="b1" id="doneBtn">Done</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+      
+        
+
+
+
+        </div>
+    </div>
+</div>
+<div class="space" style="height:12vh;width:100%;"></div>
+
+ <!-- Footer -->
+ <footer id="footer">
+    <div id="footer-widgets" class="container style-1">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="widget widget_text">
+            <!-- <h2 class="widget-title"><span>ABOUT US</span></h2> -->
+            <div class="textwidget">
+                <img style="height:50vh;width:80%;" src=".\footer.png"  alt="image"
+                class="margin-top-5 margin-bottom-25">
+              <!-- <p>Building isn’t just a job. At the Construction Company, it is our passion. With every project we
+                undertake, we set the bar high and provide the best people in the industry, with a true love of what
+                we do to make our Customers’ vision a reality.</p> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="widget widget_links">
+            <h2 class="widget-title"><span>COMPANY LINKS</span></h2>
+            <ul class="wprt-links clearfix col2">
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">History</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Services</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Team &amp; Awards</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Delivery Methods</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Community</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Safety</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">News &amp; Events</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Sustainability</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">FAQ</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Portfolio</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Contact Us</a></li>
+              <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Shop</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="widget widget_information">
+            <h2 class="widget-title"><span>CONTACT INFO</span></h2>
+            <ul class="style-2">
+              <li style="list-style:none;"  class="address clearfix">
+                <span class="hl">Address:</span>
+                <span class="text">3 St 5-A Shah Kamal Road, Lahore, Pakistan</span>
+              </li>
+              <li style="list-style:none;" class="phone clearfix">
+                <span class="hl">Phone:</span>
+                <span class="text">0324 – 4184871 </span>
+              </li>
+              <li style="list-style:none;" class="email clearfix">
+                <span class="hl">E-mail:</span>
+                <span class="text">Info@cecombuilders.pk</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="widget widget_spacer">
+            <div class="wprt-spacer clearfix" data-desktop="10" data-mobi="10" data-smobi="10" style="height:10px">
+            </div>
+          </div>
+          
+
+          <div class="widget widget_socials">
+            <div class="socials">
+              <a target="_blank" href="#"><i class="fa-brands fab fa-twitter"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-facebook-f"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-google-plus-g"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-pinterest"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fab fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bottom -->
+  <div id="bottom" class="clearfix style-1">
+    <div id="bottom-bar-inner" class="wprt-container">
+      <div class="bottom-bar-inner-wrap">
+
+        <!-- Start bottom-bar-content -->
+        <div class="bottom-bar-content">
+
+          <!-- Start copyright -->
+          <div style="padding-left:1%;" id="copyright">CECOM BUILDERS © All Rights Reserved 2024.
+          </div>
+          <!-- End copyright -->
+
+        </div>
+        <!-- End bottom-bar-content -->
+
+        <!-- Start bottom-bar-menu -->
+        <div class="bottom-bar-menu pr-3">
+          <ul class="bottom-nav">
+            <li style="list-style:none;"><a href="#/">HISTORY</a></li>
+            <li><a href="#/">FAQ</a></li>
+            <li><a href="#/">EVENTS</a></li>
+          </ul>
+        </div>
+        <!-- End bottom-bar-menu -->
+      </div>
+    </div>
+  </div>
+
+      </body>
+      
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Function to populate modal with data
+    function populateModal(name, email, phone, subject, message) {
+        var modalBody = $('#modalData');
+        modalBody.html(`
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+            <p><strong>Subject:</strong> ${subject}</p>
+            <p><strong>Message:</strong> ${message}</p>
+        `);
+    }
+
+    // Handle form submission
+    $('#contactForm').submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        // Get form values
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var phone = $('#phone').val();
+        var subject = $('#subject').val();
+        var message = $('#message').val();
+        
+        // Save data to local storage
+        var contactData = {
+            name: name,
+            email: email,
+            phone: phone,
+            subject: subject,
+            message: message
+        };
+        
+        localStorage.setItem('contactData', JSON.stringify(contactData));
+        
+        // Display data in modal
+        populateModal(name, email, phone, subject, message);
+        
+        // Show modal with entered data
+        $('#exampleModal').modal('show');
+    });
+
+    // Handle "Done" button click in modal
+    $('#doneBtn').click(function() {
+        // Clear form fields
+        $('#name').val('');
+        $('#email').val('');
+        $('#phone').val('');
+        $('#subject').val('');
+        $('#message').val('');
+
+        // Hide modal
+        $('#exampleModal').modal('hide');
+    });
+
+    // On document load, check if form was submitted (modal should only show if form was submitted)
+    var formSubmitted = localStorage.getItem('formSubmitted');
+    if (formSubmitted === 'true') {
+        // Retrieve and display data from localStorage
+        var storedData = localStorage.getItem('contactData');
+        if (storedData) {
+            var contactData = JSON.parse(storedData);
+            populateModal(contactData.name, contactData.email, contactData.phone, contactData.subject, contactData.message);
+            $('#exampleModal').modal('show');
+        }
+
+        // Clear the formSubmitted flag
+        localStorage.removeItem('formSubmitted');
+    }
+});
+
+// Function to set formSubmitted flag in localStorage
+function setFormSubmitted() {
+    localStorage.setItem('formSubmitted', 'true');
+}
+</script>
+
+
+
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@0.6%.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+      </html>

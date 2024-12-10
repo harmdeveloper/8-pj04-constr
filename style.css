@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.box1{
+    background-color: whitesmoke;
+  width: 100%;
+    height: 30vh;
+}
+.home{
+    color: orange;
+    position: absolute;
+    left: 85%;
+    top: 35%;
+    text-decoration: none;
+}
+.head1{
+    color:rgb(179, 176, 176);
+}
+.home:hover{
+    text-decoration: none;
+    color: black;
+}
+.slash{
+    position: absolute;
+    left: 89%;
+    top: 35%;
+    color:rgb(179, 176, 176);
+}
+.span1{
+    position: absolute;
+    left: 90%;
+    top: 35%;
+    color:rgb(179, 176, 176);
+}
+@media (max-width: 1024px) {
+    .home {
+        left: 80%;
+        top: 30%;
+    }
+    .slash {
+        left: 84%;
+        top: 30%;
+    }
+    .span1 {
+        left: 85%;
+        top: 30%;
+    }
+}
+
+/* Media Query for screens with a max width of 768px */
+@media (max-width: 768px) {
+    .home {
+        left: 73%;
+        top: 35%;
+    }
+    .slash {
+        left: 79%;
+        top: 35%;
+    }
+    .span1 {
+        left: 80%;
+        top: 35%;
+    }
+}
+
+/* Media Query for screens with a max width of 480px */
+@media (max-width: 480px) {
+    .home {
+        left: 70%;
+        top: 39%;
+    }
+    .slash {
+        left: 81%;
+        top: 39%;
+    }
+    .span1 {
+        left: 85%;
+        top: 39%;
+    }
+}
+@media (max-width: 554px) {
+    
+    .home {
+        left: 30%;
+        top: 65%;
+    }
+    .slash {
+        left: 43%;
+        top: 65%;
+    }
+    .span1 {
+        left: 46%;
+        top: 65%;
+    }
+}
+.head2{
+    position: absolute;
+    left: 37%;
+    top: 2%;
+    font-size: 2.5rem;
+
+}
+.hr{
+    width: 10%;
+    padding: 2px;
+    background-color: orange;
+    margin-top: 65px;
+    margin-left: 45%;
+
+    
+}
+.para1{
+    margin-left:290px ;    
+}
+.span2{
+    margin-left: 75px;
+}
+.img4{
+    margin-left: 1%;
+    margin-top: 14%;
+}
+
+.box8{
+    height: 20vh;
+    width: 100%;
+    background-color: orange;
+}
+
+
+.btn1{
+    background-color: whitesmoke;
+    border: none;
+    width: 12rem;
+    position: absolute;
+    left: 80%;  
+    top: 30%;  
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+.head9{
+    position: absolute;
+    top: 11%;
+    font-size: 2rem;
+} */
+/* Media queries */
+@media (max-width: 1200px) {
+    
+    .btn1 {
+        left: 35%;
+        top: 50%;
+    }
+    .head9 {
+        position: absolute;
+        top: -20%;
+    }
+}
+
+@media (max-width: 992px) {
+    .btn1 {
+        left: 60%;
+        width: 10rem;
+    }
+    .head9 {
+        top: 20%;
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn1 {
+        left: 35%;
+        width: 8rem;
+        top:42%;
+    }
+    .head9 {
+        top: -28%;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn1 {
+        position: absolute;
+        left: 25%;
+        width: 9rem;
+    }
+    .head9 {
+        top: -42%;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn1 {
+        left: 20%;
+        width: 8rem;
+    }
+    .head9 {
+        top: -39%;
+        font-size: 1rem;
+    }
+}
+
+
+.testimonial-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+    min-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-right: 20px;
+}
+
+.testimonial-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.testimonial-image {
+  
+    width: 100%;
+    height: 40vh;
+   
+    
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.testimonial-role {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.testimonial-button {
+    background-color:orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.testimonial-button:hover {
+    background-color:black;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.slider-button.prev {
+    left: 10px;
+}
+
+.slider-button.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        min-width: calc(50% - 20px);
+        margin-right: 10px;
+    }
+
+    .testimonial-card:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .testimonial-image {
+        height: 30vh;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .testimonial-card {
+        min-width: calc(100% - 20px);
+        margin-right: 0;
+    }
+
+    .testimonial-image {
+        height: 25vh;
+    }
+
+    .slider-button {
+        padding: 5px;
+    }
+}
+.hr1{
+    width: 10%;
+    padding: 2px;
+    background-color: orange;
+    position: absolute;
+   left:  4%;
+   top: 17%;
+
+   
+
+    
+}
+.img1{
+    height: 40vh;
+    
+}
+.img2{
+    height: 40vh;
+    
+}
+.img3{
+    height: 40vh;
+    
+}
+.head3{
+    position: absolute;
+    left: 44%;
+    top: -2%;
+}
+.head4{
+    position: absolute;
+    left: 40%;
+    top: 32%;
+}
+.head5{
+    position: absolute;
+    left: 36%;
+    top: 56%;
+}
+.para2{
+    position: absolute;
+    left: 23%;
+    top: 15%;
+}
+.para3{
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+.para4{
+    position: absolute;
+    left: 25%;
+    top: 64%;
+}
+
+.box2{
+    background-color: orange;
+    height: 12vh;
+    width: 15%;
+   position: absolute;
+   left: 76%;
+   top: 5%;
+border-radius: 50%;
+padding: 20px;
+    
+}
+.box2:hover{
+   
+    border: 2px solid orange;
+    
+}
+
+.box3{
+    background-color: orange;
+    height: 12vh;
+    width: 15%;
+    position: absolute;
+    left: 76%;
+    top: 30%;
+   
+border-radius: 50%;
+padding: 20px;
+    
+}
+.box3:hover{
+ 
+    border: 2px solid orange;
+}
+
+.box4{
+    background-color: orange;
+    height: 12vh;
+    width: 15%;
+    position: absolute;
+    left: 76%;
+    top: 55%;
+ 
+border-radius: 50%;
+padding: 20px;
+    
+}
+.box4:hover{
+   
+    border: 2px solid orange;
+}
+
+
+
+.img5{
+    height: 10vh;
+   position: absolute;
+   left: 10%;
+
+   top: 7%;
+}
+
+.img6{
+    height: 8vh;
+    left: 19%;
+position: absolute;
+   top: 17%;
+}
+
+.img7{
+    height: 9vh;
+    left: 16%;
+position: absolute;
+    top: 17%;
+}

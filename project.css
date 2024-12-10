@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.box1{
+    background-color: whitesmoke;
+  width: 100%;
+    height: 30vh;
+}
+.home{
+    color: orange;
+    position: absolute;
+    left: 85%;
+    top: 35%;
+    text-decoration: none;
+}
+.head1{
+    color:rgb(179, 176, 176);
+}
+.home:hover{
+    text-decoration: none;
+    color: black;
+}
+.slash{
+    position: absolute;
+    left: 89%;
+    top: 35%;
+    color:rgb(179, 176, 176);
+}
+.span1{
+    position: absolute;
+    left: 90%;
+    top: 35%;
+    color:rgb(179, 176, 176);
+}
+@media (max-width: 1024px) {
+    .home {
+        left: 80%;
+        top: 30%;
+    }
+    .slash {
+        left: 84%;
+        top: 30%;
+    }
+    .span1 {
+        left: 85%;
+        top: 30%;
+    }
+}
+
+/* Media Query for screens with a max width of 768px */
+@media (max-width: 768px) {
+    .home {
+        left: 73%;
+        top: 35%;
+    }
+    .slash {
+        left: 79%;
+        top: 35%;
+    }
+    .span1 {
+        left: 80%;
+        top: 35%;
+    }
+}
+@media (max-width: 425px) {
+    .home {
+        left: 74%;
+        top: 35%;
+    }
+    .slash {
+        left: 85%;
+        top: 35%;
+    }
+    .span1 {
+        left: 88%;
+        top: 35%;
+    }
+}
+@media (max-width: 375px) {
+    .home {
+        left: 34%;
+        top: 75%;
+    }
+    .slash {
+        left: 47%;
+        top: 75%;
+    }
+    .span1 {
+        left: 50%;
+        top: 75%;
+    }
+}
+.hr{
+    background-color: orange;
+    width: 15%;
+    padding: 1px;
+}
+.head2{
+    color: black;
+    font-size: 1.5rem;
+}
+.p2{
+    color: gray;
+}
+.img1{
+    width: 6%;
+}
+.img2{
+    width: 6%;
+    position: absolute;
+    left: 3%;
+    top: 56%;
+}
+.img3{
+    width: 6%;
+    position: absolute;
+    left: 3%;
+    top: 62%;
+}
+.img4{
+    width: 6%;
+    position: absolute;
+    top: 67%;
+    left: 3%;
+}
+.h6{
+    position: absolute;
+    top: 54.5%;
+}
+.p1{
+    position: absolute;
+    left: 10%;
+    top: 54.2%;
+}
+.h61{
+    position: absolute;
+    top: 59%;
+}
+.para1{
+    position: absolute;
+    left: 15%;
+    top: 58.5%;
+}
+.h62{
+    position: absolute;
+    top: 63.8%;
+}
+.para2{
+    position: absolute;
+    left: 12%;
+    top: 63.5%;
+}
+.h63{
+    position: absolute;
+    top: 68%;
+}
+.para3{
+    position: absolute;
+    left: 12%;
+    top: 67.8%;
+}
+.btn{
+    background-color: orange;
+    position: absolute;
+    top: 69%;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .img1 {
+        width:8%;
+        position: absolute;
+        top: 50%;
+    }
+    .img2{
+        width:8%;
+        position: absolute;
+        top: 55%;
+    }
+    .img3{
+        width:8%;
+        position: absolute;
+        top: 62%;
+    }
+    .img4{
+        width:8%;
+        position: absolute;
+        top: 69%;
+    }
+    .p1 {
+        left: 15%;
+        top: 50.5%;
+    }
+    .para1 {
+        left: 19%;
+        top: 57%;
+    }
+    .para2{
+        left: 15%;
+        top: 62.5%;
+    }
+    .para3{
+    left: 15%;
+    top: 71%;
+    }
+    .btn {
+        top: 75%;
+    }
+    .h6{
+        position: absolute;
+        top: 50.5%;
+        left: 8%;
+    }
+    .h61{
+        position: absolute;
+        top: 57.5%;
+        left: 8%;
+    }
+    .h62{
+        position: absolute;
+        top: 63%;
+        left: 8%;
+    }
+    .h63{
+        position: absolute;
+        top: 71%;
+        left: 7%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img1 {
+        width:4%;
+        position: absolute;
+        top: 85%;
+        left: 1%;
+    }
+    .img2{
+        width:4%;
+        position: absolute;
+        top: 89%;
+        left: 1%;
+    }
+    .img3{
+        width:4%;
+        position: absolute;
+        top: 98%;
+        left: 1%;
+    }
+    .img4{
+        width:4%;
+        position: absolute;
+        top: 106%;
+        left: 1%;
+    }
+    .p1 {
+        left: 8%;
+        top: 85%;
+    }
+    .para1 {
+        left: 10%;
+        top: 93%;
+    }
+    .para2{
+        left: 8%;
+        top: 100%;
+    }
+    .para3{
+    left: 8%;
+    top: 107%;
+    }
+    .btn {
+        top: 105%;
+    }
+    .h6{
+        position: absolute;
+        top: 85.5%;
+    }
+    .h61{
+        position: absolute;
+        top: 93.5%;
+    }
+    .h62{
+        position: absolute;
+        top: 100.5%;
+    }
+    .h63{
+        position: absolute;
+        top: 107%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .img1 {
+        width:8%;
+        position: absolute;
+        top: 85%;
+    }
+    .img2{
+        width:8%;
+        position: absolute;
+        top: 90%;
+    }
+    .img3{
+        width:8%;
+        position: absolute;
+        top: 98%;
+    }
+    .img4{
+        width:8%;
+        position: absolute;
+        top: 106%;
+    }
+    .p1 {
+        left: 15%;
+        top: 85%;
+    }
+    .para1 {
+        left: 19%;
+        top: 93%;
+    }
+    .para2{
+        left: 15%;
+        top: 100%;
+    }
+    .para3{
+    left: 15%;
+    top: 107%;
+    }
+    .btn {
+        top: 105%;
+    }
+    .h6{
+        position: absolute;
+        top: 85.5%;
+    }
+    .h61{
+        position: absolute;
+        top: 93.5%;
+    }
+    .h62{
+        position: absolute;
+        top: 100.5%;
+    }
+    .h63{
+        position: absolute;
+        top: 107%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .img1 {
+        width:8%;
+        position: absolute;
+        top: 85%;
+    }
+    .img2{
+        width:8%;
+        position: absolute;
+        top: 90%;
+    }
+    .img3{
+        width:8%;
+        position: absolute;
+        top: 98%;
+    }
+    .img4{
+        width:8%;
+        position: absolute;
+        top: 106%;
+    }
+    .p1 {
+        left: 15%;
+        top: 85%;
+    }
+    .para1 {
+        left: 19%;
+        top: 93%;
+    }
+    .para2{
+        left: 15%;
+        top: 100%;
+    }
+    .para3{
+    left: 15%;
+    top: 107%;
+    }
+    .btn {
+        top: 105%;
+    }
+    .h6{
+        position: absolute;
+        top: 85.5%;
+    }
+    .h61{
+        position: absolute;
+        top: 93.5%;
+    }
+    .h62{
+        position: absolute;
+        top: 100.5%;
+    }
+    .h63{
+        position: absolute;
+        top: 107%;
+    }
+}

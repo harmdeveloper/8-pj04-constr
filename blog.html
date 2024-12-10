@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="blog.css">
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+   
+
+<!-- Top Navbar (Visible on all screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark top-navbar">
+  <div class="container">
+      <ul class="navbar-nav social-icons">
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-pinterest"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-dribbble"></i></a>
+          </li>
+      </ul>
+      <ul class="navbar-nav ml-auto contact-icons">
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i>042-36882044</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Info@cecombuilders.pk</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-clock"></i> Mon-Fri: 7:00 - 17:00</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<!-- Main Navbar (Visible on all screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+  <a class="navbar-brand" href="./index.html"><img class="logo1" src=".\header.png" alt=""></a>
+  <button style="background-color:#4b4b4b;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+              <a style="color:black ;" class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a style="color:black ;" class="nav-link" href="./aboutus.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                  <a class="dropdown-item" href="./services.html">Services</a>
+                  <a class="dropdown-item" href="./servicesDetail.html">Services Detail</a>
+                  <a class="dropdown-item" href="./shop.html">Shop</a>
+                  <a class="dropdown-item" href="./shopSingle.html">Shop single</a>
+                  <a class="dropdown-item" href="./shopCart.html">Shop Cart</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a style="color:black ;" class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+                  <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
+                  <a class="dropdown-item" href="./Project detail.html">Project</a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a style="color:black ;" class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+              <a style="color:black ;" class="nav-link" href="./ContactUs.html">Contact</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a style="color:black ;" class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i style="color:black ;" class="fas fa-shopping-cart"></i><span style="background-color: #ffbc13;color: #fff;" class="badge badge-pill badge-danger">3</span>
+              </a>
+              <div class="dropdown-menu cart-dropdown" aria-labelledby="cartDropdown">
+                  <div class="dropdown-header">Cart Items</div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <span>Item 1</span>
+                      <span>$10.00</span>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <span>Item 2</span>
+                      <span>$15.00</span>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <span>Item 3</span>
+                      <span>$20.00</span>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <strong>Subtotal:</strong>
+                      <strong>$45.00</strong>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="btn btn-primary btn-block">Checkout</a>
+                  <a href="#" class="btn btn-secondary btn-block mt-2">View Cart</a>
+              </div>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+  <div class="conntainer">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active box1">
+        <h1 class="head1 ml-5 mt-5">News</h1>
+        <a class="home" href="./index.html">Home</a>
+        <span class="slash">/</span>
+        <span class="span1">Blog</span>
+            </div>
+          </div>
+          </div>
+        </div>
+<!-- data  -->
+        <div class="container-fluid ">
+          <div class="row">
+            <div class="space " style="height:8vh;width:100%;"></div>
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 ">
+              <div style="border:none;"  class="card pl-5 pr-5">
+                <img src="https://themes247.net/html5/construction-template/demo/assets/img/news/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title " style="font-size: 2rem;">Best Treehouse Plans</h5>
+        
+                <p class=" para4 bg-light p-2 ">By construction / December 30, 2016 / 3 Comments / Building, Construction, Architecture, Green House</p>
+            
+                  <p class="">Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim.</p>
+                  <button type="button" class="btn btn-warning">Read more</button>
+                  <p class="para5">Share:</p>
+                  <div class="bx1"><ion-icon class="ii" name="logo-facebook"></ion-icon></div>
+                  <div class="bx2"><ion-icon class="ii" name="logo-twitter"></ion-icon></div>
+                  <div class="bx3"><ion-icon class="ii" name="logo-instagram"></ion-icon></div>
+                </div>
+              </div>
+              <div class="space " style="height:8vh;width:100%;"></div>
+              <div style="border:none;" class="card pl-5 pr-5">
+                <img src="https://themes247.net/html5/construction-template/demo/assets/img/news/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title " style="font-size: 2rem;">The Future of Buildings</h5>
+        
+                <p class=" para4 bg-light p-2 ">By construction / December 30, 2016 / 3 Comments / Building, Construction, Architecture, Green House</p>
+            
+                  <p class="">Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim.</p>
+                  <button type="button" class="btn btn-warning">Read more</button>
+                  <p class="para5">Share:</p>
+                  <div class="bx1"><ion-icon class="ii" name="logo-facebook"></ion-icon></div>
+                  <div class="bx2"><ion-icon class="ii" name="logo-twitter"></ion-icon></div>
+                  <div class="bx3"><ion-icon class="ii" name="logo-instagram"></ion-icon></div>
+                </div>
+              </div>
+              <div class="space " style="height:8vh;width:100%;"></div>
+              <div style="border:none;" class="card pl-5 pr-5">
+                <img src="https://themes247.net/html5/construction-template/demo/assets/img/news/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title " style="font-size: 2rem;">Best Treehouse Plans</h5>
+        
+                <p class=" para4 bg-light p-2 ">By construction / December 30, 2016 / 3 Comments / Building, Construction, Architecture, Green House</p>
+            
+                  <p class="">Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim.</p>
+                  <button type="button" class="btn btn-warning mt-2">Read more</button>
+                  <p class="para5">Share:</p>
+                  <div class="bx1"><ion-icon class="ii" name="logo-facebook"></ion-icon></div>  
+                  <div class="bx2"><ion-icon class="ii" name="logo-twitter"></ion-icon></div>
+                  <div class="bx3"><ion-icon class="ii" name="logo-instagram"></ion-icon></div>
+              
+                  
+                </div>
+               
+              </div>
+              <div class="space " style="height:8vh;width:100%;"></div>
+              </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+             <input class=" p-3 w-75 ml-5 " placeholder="Search" style="border: 2px solid whitesmoke;" type="text">
+             <ion-icon class="ii1" name="search-outline" style="color: orange;"></ion-icon>
+             <div class="col  mt-5">
+              <!-- <h5 class="mt-3 ml-4">Categories</h5> -->
+              <div class="box4">
+                <div class="  pt-2 pb-2">
+                  <h5 class="ml-3" style="color: black; letter-spacing:2px;">Categories</h5>
+                </div>
+           
+                <div class="box6">
+                  <h6 class=" dep ml-3 mt-4"> <i class="fa-solid fa-arrow-right"></i> Building</h6>
+                  <h6 class="hh1 ml-5 ">(2)</h6>
+                  <hr style="width: 90%; margin-left: 3%;">
+                </div>
+                <div class="box6">
+                  <h6 class="ml-3  "><a class="dep" style="text-decoration: none;" href=""> <i class="fa-solid fa-arrow-right"></i> Ecobuilding</a></h6>
+                  <h6 class="hh2 ml-5 ">(4)</h6>
+                  <hr style="width: 90%; margin-left: 3%;">
+                </div>
+                <div class="box6">
+                  <h6 class="ml-3"> <a style="text-decoration: none;" class="dep" href=""> <i class="fa-solid fa-arrow-right"></i> House </a></h6>
+                  <h6 class="hh3 ml-5 ">(1)</h6>
+                  <hr style="width: 90%; margin-left: 3%;">
+                </div>
+                <div class="box6">
+                  <h6 class="ml-3"><a style="text-decoration: none;" class="dep" href=""> <i class="fa-solid fa-arrow-right"></i> Office </a></h6>
+                  <h6 class="hh4 ml-5 ">(3)</h6>
+                  
+             </div>
+
+            </div>
+          </div>
+          <div class="col ">
+            <div class="box4">
+              <div class="  pt-2 pb-2">
+                <h5 class="ml-3 mt-4" style="color: black; letter-spacing:2px;">LATEST NEWS</h5>
+              </div>
+         
+              <div class="box6">
+                <img class="img1 w-25 ml-3" src="https://themes247.net/html5/construction-template/demo/assets/img/news/1s.jpg" alt="">
+                <h6 class=" head6"> <i class="fa-solid fa-arrow-right"></i> Best Treehouse Plans</h6>
+                <p class="paara1">December 30, 2016</p>
+               
+                <hr style="width: 90%; margin-left: 3%;">
+              </div>
+              <div class="box6">
+                <img class="img1 w-25 ml-3" src="https://themes247.net/html5/construction-template/demo/assets/img/news/2s.jpg" alt="">
+                <h6 class=" head7"> <i class="fa-solid fa-arrow-right"></i> Best Treehouse Plans</h6>
+                <p class="paara2">December 30, 2016</p>
+               
+                <hr style="width: 90%; margin-left: 3%;">
+              </div>
+              <div class="box6">
+                <img class="img1 w-25 ml-3" src="https://themes247.net/html5/construction-template/demo/assets/img/news/3s.jpg" alt="">
+                <h6 class=" head8"> <i class="fa-solid fa-arrow-right"></i> Best Treehouse Plans</h6>
+                <p class="paara3">December 30, 2016</p>
+               
+                <hr style="width: 90%; margin-left: 3%;">
+              </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div class="  pt-2 pb-4">
+            <h5 class="ml-3" style="color: black; letter-spacing:2px;">TAGS CLOUD</h5>
+          </div>
+          <div class="row">
+            <div style="height:6vh;margin-left:2vh;" class="col pl-4 pt-2 border bg-light">
+              <div class="bx4 bg-light d-inline"><span>Buildings</span></div>
+            </div>
+            <div class="space" style="width:1vh;height:6vh;"></div>
+            <div style="height:6vh;margin-left:2vh;" class="col pl-4 pt-2 border bg-light">
+              <div class="bx5 bg-light  d-inline"><span>Architectural</span></div>
+            </div>
+            <div class="space" style="width:1vh;height:6vh;"></div>
+            <div style="height:6vh;margin-left:2vh;" class="col pl-4 pt-2 border bg-light">
+              <div class="bx6 bg-light  d-inline"><span >Interior</span></div>
+            </div>
+          </div>
+          <div class="space" style="width:100%;height:3vh;"></div>
+          <div class="row">
+            <div style="height:6vh;margin-left:2vh;" class="col pl-4 pt-2 border bg-light">
+              <div class="bx7 bg-light   d-inline" ><span >Construction</span></div>
+            </div>
+            <div class="space" style="width:1vh;height:6vh;"></div>
+            <div style="height:6vh;margin-left:2vh;" class="col pl-4 pt-2 border bg-light">
+              <div class="bx8 bg-light  d-inline" ><span >Smart House</span></div>
+            </div>
+          </div>
+          <div class="space" style="width:100%;height:3vh;"></div>
+        </div>
+            </div>
+            </div>
+          </div>
+
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col ">
+              <div class="class" style="height:8vh;width: 100%;"></div>
+             <a href="./portfolio.html"> <button type="button" class="btn btn-warning  btn1">1</button></a>
+             <a href="./portfolio.html">  <button type="button" class="btn btn-warning  btn2">2</button></a>
+             <a href="./portfolio.html">  <button type="button" class="btn btn-warning  btn3">-></button> </a>
+              <div class="class" style="height:15vh;width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div id="footer-widgets" class="container style-1">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="widget widget_text">
+          <!-- <h2 class="widget-title"><span>ABOUT US</span></h2> -->
+          <div class="textwidget">
+              <img style="height:50vh;width:80%;" src=".\footer.png"  alt="image"
+              class="margin-top-5 margin-bottom-25">
+            <!-- <p>Building isn’t just a job. At the Construction Company, it is our passion. With every project we
+              undertake, we set the bar high and provide the best people in the industry, with a true love of what
+              we do to make our Customers’ vision a reality.</p> -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="widget widget_links">
+          <h2 class="widget-title"><span>COMPANY LINKS</span></h2>
+          <ul class="wprt-links clearfix col2">
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">History</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Services</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Team &amp; Awards</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Delivery Methods</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Community</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Safety</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">News &amp; Events</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Sustainability</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">FAQ</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Portfolio</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Contact Us</a></li>
+            <li style="list-style:none;" class="style-2"><a  style="text-decoration: none;color: black;" href="#">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="widget widget_information">
+          <h2 class="widget-title"><span>CONTACT INFO</span></h2>
+          <ul class="style-2">
+            <li style="list-style:none;"  class="address clearfix">
+              <span class="hl">Address:</span>
+              <span class="text">3 St 5-A Shah Kamal Road, Lahore, Pakistan</span>
+            </li>
+            <li style="list-style:none;" class="phone clearfix">
+              <span class="hl">Phone:</span>
+              <span class="text">0324 – 4184871 </span>
+            </li>
+            <li style="list-style:none;" class="email clearfix">
+              <span class="hl">E-mail:</span>
+              <span class="text">Info@cecombuilders.pk</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget widget_spacer">
+          <div class="wprt-spacer clearfix" data-desktop="10" data-mobi="10" data-smobi="10" style="height:10px">
+          </div>
+        </div>
+        
+
+        <div class="widget widget_socials">
+          <div class="socials">
+            <a target="_blank" href="#"><i class="fa-brands fab fa-twitter"></i></a>
+            <a target="_blank" href="#"><i class="fa-brands fab fa-facebook-f"></i></a>
+            <a target="_blank" href="#"><i class="fa-brands fab fa-google-plus-g"></i></a>
+            <a target="_blank" href="#"><i class="fa-brands fab fa-pinterest"></i></a>
+            <a target="_blank" href="#"><i class="fa-brands fab fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bottom -->
+<div id="bottom" class="clearfix style-1">
+  <div id="bottom-bar-inner" class="wprt-container">
+    <div class="bottom-bar-inner-wrap">
+
+      <!-- Start bottom-bar-content -->
+      <div class="bottom-bar-content">
+
+        <!-- Start copyright -->
+        <div style="padding-left:1%;" id="copyright">CECOM BUILDERS © All Rights Reserved 2024.
+        </div>
+        <!-- End copyright -->
+
+      </div>
+      <!-- End bottom-bar-content -->
+
+      <!-- Start bottom-bar-menu -->
+      <div class="bottom-bar-menu pr-3">
+        <ul class="bottom-nav">
+          <li style="list-style:none;"><a href="#/">HISTORY</a></li>
+          <li><a href="#/">FAQ</a></li>
+          <li><a href="#/">EVENTS</a></li>
+        </ul>
+      </div>
+      <!-- End bottom-bar-menu -->
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
